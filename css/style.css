@@ -1,4 +1,9 @@
-﻿* {
+﻿@font-face {
+	font-family: lovelo;
+	src:url(lovelo_black-webfont.otf);
+}
+
+* {
 	box-sizing: border-box;
 }
 
@@ -36,9 +41,9 @@ body {
 .col-12 {width: 100%}
 
 .navigation {
-	width: 100vw;
-	height: 10vh;
-	line-height: 10vh;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
 }
 .navigation h1 {
 	font-family: arial;
@@ -61,6 +66,8 @@ body {
 	border-width: 1px;
 	border-color: #BDBDBD;
 	color: #BDBDBD;
+	background: url(../images/search.png) right center no-repeat;
+	padding: 10px;
 }
 .navigation button {
 	font-weight: bold;
@@ -70,7 +77,7 @@ body {
 	font-size: 10px;
 	border-radius: 15px;
 	cursor: pointer;
-	min-width: 90px;
+	min-width: 80px;
 	min-height: 30px;
 	color: white;
 	background-image: -webkit-linear-gradient(top, #FF9933, #CD7F32);
@@ -87,8 +94,8 @@ header nav .col-4 {
 	height: 40%;
 }
 header nav form {
-	float: right;
 	position: relative;
+	float: right;
 }
 header nav form img {
 	position: absolute;
@@ -96,7 +103,7 @@ header nav form img {
 	left: 140px;
 }
 .motto {
-	width: 100vw;
+	width: 100%;
 	height: 15px;
 }
 .motto h1 {
@@ -110,7 +117,7 @@ header nav form img {
 .motto h1::after {
 	content: '';
 	display: block;
-	width: 605%;
+	width: 607%;
 	height: 1px;
 	background: #BDBDBD;
 	position: absolute;
@@ -118,24 +125,20 @@ header nav form img {
 	left: calc(100% + 10px);
 }
 .menu {
-	width: 100vw;
-	height: 60px;
+	width: 100%;
+	height: 50px;
 }
 .menu ul {
 	padding: 0;
-	height: 30px;
-	line-height: 30px;
 }
 .menu li {
 	display: inline-block;
-	margin: 0;
+	margin-left: 30px;
 }
 .menu li a {
 	text-decoration: none;
 	color: black;
-	margin-right: 40px;
 	padding: 0;
-	float: left;
 	font-size: 14px;
 	font-family: lovelo;
 	cursor: pointer;
@@ -145,19 +148,20 @@ header nav form img {
 }
 
 .hero {
-	width: 100vw;
-	height: 66vh;
-	background: url(../images/background.jpg);
+	width: 100%;
+	height: 430px;
+	background-color: #E1DED5;
 	box-sizing: border-box;
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
+	position: relative;
+	z-index: 0;
 }
-.hero .border {
+.border {
+	width: 100%;
 	height: 350px;
 	background-color: transparent;
-	width: 95%;
-	float: right;
 	border-top: solid;
 	border-left: solid;
 	border-bottom: solid;
@@ -165,27 +169,23 @@ header nav form img {
 	border-left-width: 5px;
 	border-bottom-width: 5px;
 	border-color: white;
-	position: relative;
-	z-index: 0;
-	top: 55px;
-	right: 0;
+	z-index: 1;
+	top: 40px;
+	position: absolute;
+	left: 100px;
 }
 .hero h1 {
 	color: white;
 	font-family: lovelo;
 	font-size: 45px;
-	margin-top: 100px;
-}
-.hero .info {
-	position: absolute;
-	z-index: 1;
-	margin-left: 130px;
+	margin-left: 20px;
 }
 .hero p {
 	color: #8e8e86;
 	font-family: arial;
 	font-size: 15px;
 	margin-bottom: 40px;
+	margin-left: 20px;
 }
 .hero button {
 	float: left;
@@ -199,19 +199,19 @@ header nav form img {
 	min-height: 30px;
 	background-image: -webkit-linear-gradient(top, #FFFFFF, #ECECEC);
 	outline: none;
+	margin-left: 20px;
 }
 .hero button:hover {
 	background-image: -webkit-linear-gradient(top, #F9F9F9, #C0C0C0);
 }
 .hero img {
-	float: right;
-	width: 81%;
+	float: left;
+	width: 60%;
 	height: auto;
 }
 .productsmini {
 	width: 100vw;
 	height: 100px;
-	line-height: 100px;
 	border-bottom: solid;
 	border-color: #BDBDBD;
 	border-bottom-width: 1px;
@@ -219,7 +219,7 @@ header nav form img {
 .gallery h1 {
 	font-size: 14px;
 	font-family: lovelo;
-	margin: 0;
+	margin-top: 40px;
 }
 .gallery img {
 	margin-top: 20px;
@@ -242,7 +242,7 @@ header nav form img {
 	border-color: #BDBDBD;
 }
 .gallerymenu {
-	width: 100vw;
+	width: 100%;
 	height: 90px;
 	line-height: 90px;
 }
@@ -350,8 +350,7 @@ header nav form img {
 	background-image: -webkit-linear-gradient(top, #F9F9F9, #C0C0C0);
 }
 .footer {
-	width: 100vw;
-	height: 350px;
+	width: 100%;	
 	margin 0 auto;
 	overflow: hidden;
 	display: block;
@@ -434,6 +433,7 @@ header nav form img {
 	color: #BDBDBD;
 	float: right;
 	margin-right: 15px;
+	padding-left: 10px;
 }
 .footer button {
 	font-weight: bold;
@@ -458,7 +458,7 @@ header nav form img {
 	text-align: left;
 }
 .copyright {
-	width: 100vw;
+	width: 100%;
 	height: 100px;
 	margin 0 auto;
 	overflow: hidden;
@@ -474,7 +474,7 @@ header nav form img {
 	margin-left: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 903px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -489,7 +489,36 @@ header nav form img {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
-
+	.navigation form {
+		margin-top: 40px;
+		position: relative;
+		float: none;
+	}
+	.navigation h1 {
+		font-size: 15px;
+	}
+	.navigation {
+		text-align: center;
+	}
+	.navigation button {
+		width: 100px;
+		height: 40px;
+		font-size: 15px;
+	}
+	.motto {
+		display: none;
+	}
+	.menu li {
+		display: list-item;
+		padding: 10px;
+		text-align: center;
+		margin-left: 0;
+	}
+	.menu li a {
+		font-size: 16px;
+		text-align: center;
+		float: center;
+	}
 	.hero img {
 		display: none;
 	}
@@ -499,12 +528,80 @@ header nav form img {
 	.hero p {
 		text-align: center;
 	}
-	.hero .border {
+	.hero {
 		height: 500px;
 	}
-	.hero {
-		height: 600px;
+	.info {
+		text-align: center;
 	}
 	.productsmini {
 		display: none;
 	}
+	.category .col-5 h1::after {
+		display: none;
+	}
+	.category .col-5 h2::after {
+		display: none;
+	}
+	.jacket img {
+		padding: 0;
+	}
+	.jacket {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.jacket a {
+		text-align: center;
+	}
+	.footer {
+		text-align: center;
+		margin-left: 0;
+	}
+	.footer input {
+		float: none;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.footer button {
+		margin-bottom: 20px;
+	}
+	.footer h1 {
+		margin-left: 0;
+	}
+	.footer h2 {
+		margin-left: 0;
+	}
+	.footer p {
+		margin-left: 0;
+	}
+	.footer p2 {
+		margin-left: 0;
+	}
+	.footer a {
+		text-align: center;
+		margin-left: 0;
+	}
+	.footer a2 {
+		text-align: center;
+		margin-left: 0;
+	}
+	.footer a3 {
+		text-align: center;
+		margin-left: 0;
+	}
+	.border {
+		border-top: none;
+		border-bottom: none;
+		border-left: none;
+		left: 0px;
+		top: 10px;
+		text-align: center;
+		float: none;
+	}
+	.border button {
+		float: none;
+	}
+	.hero {
+		height: 350px;
+	}
+}
