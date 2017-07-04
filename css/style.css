@@ -1,6 +1,4 @@
-﻿@import url(https://fonts.googleapis.com/css?family=PT+Sans);
-
-* {
+﻿* {
 	box-sizing: border-box;
 }
 
@@ -11,8 +9,6 @@ body {
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 1px;
-	width: 100%;
 }
 
 .row:before, 
@@ -40,11 +36,10 @@ body {
 .col-12 {width: 100%}
 
 .navigation {
-	width: 100%;
-	height: 60px;
-	line-height: 60px;
+	width: 100vw;
+	height: 10vh;
+	line-height: 10vh;
 }
-
 .navigation h1 {
 	font-family: arial;
 	font-size: 12px;
@@ -93,9 +88,15 @@ header nav .col-4 {
 }
 header nav form {
 	float: right;
+	position: relative;
+}
+header nav form img {
+	position: absolute;
+	top: 9px;
+	left: 140px;
 }
 .motto {
-	width: 100%;
+	width: 100vw;
 	height: 15px;
 }
 .motto h1 {
@@ -109,7 +110,7 @@ header nav form {
 .motto h1::after {
 	content: '';
 	display: block;
-	width: 607%;
+	width: 605%;
 	height: 1px;
 	background: #BDBDBD;
 	position: absolute;
@@ -117,7 +118,7 @@ header nav form {
 	left: calc(100% + 10px);
 }
 .menu {
-	width: 100%;
+	width: 100vw;
 	height: 60px;
 }
 .menu ul {
@@ -144,9 +145,13 @@ header nav form {
 }
 
 .hero {
-	background-color: #e1ded5;
-	width: 100%;
-	height: 450px;
+	width: 100vw;
+	height: 66vh;
+	background: url(../images/background.jpg);
+	box-sizing: border-box;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
 }
 .hero .border {
 	height: 350px;
@@ -163,7 +168,7 @@ header nav form {
 	position: relative;
 	z-index: 0;
 	top: 55px;
-	left: 10px;
+	right: 0;
 }
 .hero h1 {
 	color: white;
@@ -200,12 +205,11 @@ header nav form {
 }
 .hero img {
 	float: right;
-	position: relative;
 	width: 81%;
+	height: auto;
 }
-
 .productsmini {
-	width: 100%;
+	width: 100vw;
 	height: 100px;
 	line-height: 100px;
 	border-bottom: solid;
@@ -238,7 +242,7 @@ header nav form {
 	border-color: #BDBDBD;
 }
 .gallerymenu {
-	width: 100%;
+	width: 100vw;
 	height: 90px;
 	line-height: 90px;
 }
@@ -255,7 +259,7 @@ header nav form {
 .category .col-5 h1::after {
 	content: '';
 	display: block;
-	width: 400%;
+	width: 330%;
 	height: 1px;
 	background: #BDBDBD;
 	position: absolute;
@@ -291,74 +295,44 @@ header nav form {
 .category .col-5 h2::after {
 	content: '';
 	display: block;
-	width: 400%;
+	width: 350%;
 	height: 1px;
 	background: #BDBDBD;
 	position: absolute;
 	top: 50%;
 	left: calc(100% + 10px);
 }
-.products {
-	width: 100%;
-	height: 1080px;
-}
-.jackets {
-	display: flex;
-  	flex-wrap: wrap;
-  	justify-content: center;
-}
-.jackets img:hover {
-	opacity: 0.8;
-	cursor:pointer;
-}
-.photo {
-  	margin: 10px;
-  	display: flex;
-	justify-content: center;
-  	align-items: center;
-	min-width: 250px;
-	min-height: 250px;
-}
-.data {
-	height:50px;
-	display:flex;
-}
-.data .prices {
-	display:flex;
-	align-items:left;
-	justify-content:left;
-	flex-grow:1;
-	margin: 15px;
-	border-top: solid;
+.jacket img {
+	padding: 30px;
+	margin-left: 20px;
+	border-bottom: solid;
 	border-color: #BDBDBD;
-	border-top-width: 1px;
+	border-bottom-width: 1px;
 }
-.details {
-	height:50px;
-	display:flex;
-	margin-bottom: 50px;
+.jacket img:hover {
+	opacity: 0.8;
+	cursor: pointer;
 }
-.details .brand {
-	display:flex;
-	align-items:left;
-	justify-content:left;
-	flex-grow:1;
-	margin: 15px;
-}
-.data h1 {
+.jacket h1 {
 	font-family: lovelo;
-	font-size: 15px;
-	margin-top: 20px;
+	font-size: 16px;
+	color: black;
+	margin-bottom: 1px;
+	margin-left: 20px;
 }
-.brand a {
+.jacket a {
 	font-family: arial;
 	color: #BDBDBD;
 	font-size: 12px;
+	margin-left: 20px;
+}
+.dane {
+	display: block;
+	text-align: left;
 }
 .more {
-	display: flex;
-  	flex-wrap: wrap;
-  	justify-content: center;
+	text-align: center;
+	margin-top: 50px;
 	margin-bottom: 50px;
 }
 .more button {
@@ -376,7 +350,7 @@ header nav form {
 	background-image: -webkit-linear-gradient(top, #F9F9F9, #C0C0C0);
 }
 .footer {
-	width: 100%;
+	width: 100vw;
 	height: 350px;
 	margin 0 auto;
 	overflow: hidden;
@@ -484,7 +458,7 @@ header nav form {
 	text-align: left;
 }
 .copyright {
-	width: 100%;
+	width: 100vw;
 	height: 100px;
 	margin 0 auto;
 	overflow: hidden;
@@ -492,7 +466,6 @@ header nav form {
 	position: relative;
 	float: left;
 }
-
 .copyright p {
 	font-family: arial;
 	color: #BDBDBD;
@@ -500,16 +473,6 @@ header nav form {
 	margin-top: 30px;
 	margin-left: 20px;
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 767px) {
     /* For tablets: */
@@ -526,3 +489,22 @@ header nav form {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
+
+	.hero img {
+		display: none;
+	}
+	.hero h1 {
+		text-align: center;
+	}
+	.hero p {
+		text-align: center;
+	}
+	.hero .border {
+		height: 500px;
+	}
+	.hero {
+		height: 600px;
+	}
+	.productsmini {
+		display: none;
+	}
