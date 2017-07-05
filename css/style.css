@@ -551,6 +551,7 @@ body {
 	}
 	.border button {
 		float: none;
+		margin-left: 0;
 	}
 	/* OSTATNIO OGLĄDANE */
 	.productsmini, .category .col-5 h1::after, .category .col-5 h2::after {
