@@ -496,7 +496,7 @@ body {
     .col-s-12 {width: 100%;}
 
 	/* MENU GÓRNE */
-	.navigation form {
+	.header .navigation form {
 		margin-top: 40px;
 		position: relative;
 		float: none;
@@ -537,7 +537,7 @@ body {
 		text-align: center;
 	}
 	.hero {
-		height: 500px;
+		height: 380px;
 	}
 	.border {
 		border-top: none;
