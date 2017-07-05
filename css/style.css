@@ -535,6 +535,7 @@ body {
 	}
 	.hero h1, .hero p, .info {
 		text-align: center;
+		margin-left: 0;
 	}
 	.hero {
 		height: 380px;
@@ -558,6 +559,7 @@ body {
 	/* PRODUKTY */
 	.jacket img {
 		padding: 0;
+		margin-left: 0;
 	}
 	.jacket {
 		margin-bottom: 50px;
