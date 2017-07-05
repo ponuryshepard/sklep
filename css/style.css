@@ -1,4 +1,5 @@
-﻿@font-face {
+﻿/* STYLE GLOBALNE */
+@font-face {
 	font-family: lovelo;
 	src:url(lovelo_black-webfont.otf);
 }
@@ -40,6 +41,7 @@ body {
 .col-11 {width: 91.66%}
 .col-12 {width: 100%}
 
+/* MENU GÓRNE */
 .navigation {
 	width: 100%;
 	height: 60px;
@@ -57,6 +59,7 @@ body {
 }
 .navigation img {
 	margin-top: 10px;
+	margin-left: 10px;
 }
 .navigation input {
 	border-radius: 15px;
@@ -77,8 +80,8 @@ body {
 	font-size: 10px;
 	border-radius: 15px;
 	cursor: pointer;
-	min-width: 80px;
-	min-height: 30px;
+	width: 70px;
+	height: 30px;
 	color: white;
 	background-image: -webkit-linear-gradient(top, #FF9933, #CD7F32);
 	border: none;
@@ -87,17 +90,17 @@ body {
 .navigation button:hover {
 	background-image: -webkit-linear-gradient(top, #FFCC33, #FF9900);
 }
-header nav .col-2 {
+.header .navigation .col-2 {
 	text-align: center;
 }
-header nav .col-4 {
+.header .navigation .col-4 {
 	height: 40%;
 }
-header nav form {
+.header .navigation form {
 	position: relative;
 	float: right;
 }
-header nav form img {
+.header .navigation form img {
 	position: absolute;
 	top: 9px;
 	left: 140px;
@@ -146,7 +149,7 @@ header nav form img {
 .menu li a:hover {
 	color: #BDBDBD;
 }
-
+/* PANEL POWITALNY*/
 .hero {
 	width: 100%;
 	height: 430px;
@@ -209,17 +212,19 @@ header nav form img {
 	width: 60%;
 	height: auto;
 }
+/* OSTATNIO OGLĄDANE */
 .productsmini {
-	width: 100vw;
+	width: 100%;
 	height: 100px;
 	border-bottom: solid;
 	border-color: #BDBDBD;
 	border-bottom-width: 1px;
 }
 .gallery h1 {
-	font-size: 14px;
+	font-size: 12px;
 	font-family: lovelo;
 	margin-top: 40px;
+	text-align: center;
 }
 .gallery img {
 	margin-top: 20px;
@@ -241,6 +246,7 @@ header nav form img {
 	border-right-width: 1px;
 	border-color: #BDBDBD;
 }
+/* POLECANE/NOWOŚCI/PROMOCJE */
 .gallerymenu {
 	width: 100%;
 	height: 90px;
@@ -302,6 +308,7 @@ header nav form img {
 	top: 50%;
 	left: calc(100% + 10px);
 }
+/* PRODUKTY */
 .jacket img {
 	padding: 30px;
 	margin-left: 20px;
@@ -330,6 +337,7 @@ header nav form img {
 	display: block;
 	text-align: left;
 }
+/* ZOBACZ WIĘCEJ PRODUKTÓW */
 .more {
 	text-align: center;
 	margin-top: 50px;
@@ -349,6 +357,7 @@ header nav form img {
 .more button:hover {
 	background-image: -webkit-linear-gradient(top, #F9F9F9, #C0C0C0);
 }
+/* INFORMACJE/KOSZTY DOSTAWY/NEWSLETTER */
 .footer {
 	width: 100%;	
 	margin 0 auto;
@@ -453,10 +462,7 @@ header nav form img {
 .footer button:hover {
 	background-image: -webkit-linear-gradient(top, #FFCC33, #FF9900);
 }
-.dane {
-	display: block;
-	text-align: left;
-}
+/* PRAWA AUTORSKIE */
 .copyright {
 	width: 100%;
 	height: 100px;
@@ -489,6 +495,7 @@ header nav form img {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
+	/* MENU GÓRNE */
 	.navigation form {
 		margin-top: 40px;
 		position: relative;
@@ -519,75 +526,18 @@ header nav form img {
 		text-align: center;
 		float: center;
 	}
+	/*SEKCJA POWITALNA */
+	.hero {
+		height: 350px;
+	}
 	.hero img {
 		display: none;
 	}
-	.hero h1 {
-		text-align: center;
-	}
-	.hero p {
+	.hero h1, .hero p, .info {
 		text-align: center;
 	}
 	.hero {
 		height: 500px;
-	}
-	.info {
-		text-align: center;
-	}
-	.productsmini {
-		display: none;
-	}
-	.category .col-5 h1::after {
-		display: none;
-	}
-	.category .col-5 h2::after {
-		display: none;
-	}
-	.jacket img {
-		padding: 0;
-	}
-	.jacket {
-		text-align: center;
-		margin-bottom: 50px;
-	}
-	.jacket a {
-		text-align: center;
-	}
-	.footer {
-		text-align: center;
-		margin-left: 0;
-	}
-	.footer input {
-		float: none;
-		margin: 0;
-		margin-bottom: 10px;
-	}
-	.footer button {
-		margin-bottom: 20px;
-	}
-	.footer h1 {
-		margin-left: 0;
-	}
-	.footer h2 {
-		margin-left: 0;
-	}
-	.footer p {
-		margin-left: 0;
-	}
-	.footer p2 {
-		margin-left: 0;
-	}
-	.footer a {
-		text-align: center;
-		margin-left: 0;
-	}
-	.footer a2 {
-		text-align: center;
-		margin-left: 0;
-	}
-	.footer a3 {
-		text-align: center;
-		margin-left: 0;
 	}
 	.border {
 		border-top: none;
@@ -601,7 +551,33 @@ header nav form img {
 	.border button {
 		float: none;
 	}
-	.hero {
-		height: 350px;
+	/* OSTATNIO OGLĄDANE */
+	.productsmini, .category .col-5 h1::after, .category .col-5 h2::after {
+		display: none;
+	}
+	/* PRODUKTY */
+	.jacket img {
+		padding: 0;
+	}
+	.jacket {
+		margin-bottom: 50px;
+	}
+	.jacket, .jacket a {
+		text-align: center;
+	}
+	/* INFORMACJE/KOSZTY DOSTAWY/NEWSLETTER */
+	.footer input {
+		float: none;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.footer button {
+		margin-bottom: 20px;
+	}
+	.footer, .footer h1, .footer h2, .footer p, .footer p2, .footer a, .footer a2, .footer a3 {
+		margin-left: 0;
+	}
+	.footer, .footer a, .footer a2, .footer a3 {
+		text-align: center;
 	}
 }
